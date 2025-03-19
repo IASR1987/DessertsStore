@@ -1,0 +1,25 @@
+import React from "react";
+import Product from "../product/Product";
+
+function Carta() {
+  const products = [
+    { nombre: "Baklava", precio: 25, url: "/images/image-baklava-desktop.jpg" },
+    { nombre: "Brownie", precio: 10, url: "/images/image-brownie-desktop.jpg" },
+    { nombre: "Cake", precio: 5, url: "/images/image-cake-desktop.jpg" }
+  ];
+
+  return (
+    <div className="w-screen h-screen bg-amber-950">
+      //{products.map((product, index) => (
+        <Product 
+          key={index}
+          nombre={product.nombre}
+          precio={product.precio}
+          image={product.url}
+        />
+      ))} 
+    </div>
+  );
+}
+
+export default Carta;
